@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B88071B6-7AAE-4FF5-BA16-683516B0C07B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B4B7FDCBE088E6B99C14AC538852B36789341313</key>
+		<string>https://github.com/colemancda/StyleKitView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StyleKitSwiftExtractor/StyleKitSwiftExtractor.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B4B7FDCBE088E6B99C14AC538852B36789341313</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/colemancda/StyleKitView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B4B7FDCBE088E6B99C14AC538852B36789341313</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B4B7FDCBE088E6B99C14AC538852B36789341313</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StyleKitView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
