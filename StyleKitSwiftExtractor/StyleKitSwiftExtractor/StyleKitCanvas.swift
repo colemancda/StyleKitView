@@ -26,7 +26,7 @@ public func GenerateStyleKitCanvasSourceCode(canvasNames: [String]) -> String {
     
     // create enum
     sourcePrint("/** PaintCode canvas name. */")
-    sourcePrint("public enum StyleKitCanvas {")
+    sourcePrint("public enum StyleKitCanvas: String {")
     
     for canvas in canvasNames {
         

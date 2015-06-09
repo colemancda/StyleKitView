@@ -59,7 +59,7 @@ public func GenerateStyleKitViewSourceCode(canvasNames: [String]) -> String {
     sourcePrint("@IBDesignable public class StyleKitView: UIView {")
     sourcePrint("")
     sourcePrint("/** Name of the PaintCode canvas to be rendered. Raw value of StyleKitCanvas. */")
-    sourcePrint("@IBInspectable public var canvasName: String = \"\" { @set { self.setNeedsDisplay() }}")
+    sourcePrint("@IBInspectable public var canvasName: String = \"\" { didSet { self.setNeedsDisplay() }}")
     sourcePrint("")
     sourcePrint("public override func drawRect(rect: CGRect) {")
     sourcePrint("if let canvas = StyleKitCanvas(rawValue: self.canvasName) {")
@@ -73,7 +73,7 @@ public func GenerateStyleKitViewSourceCode(canvasNames: [String]) -> String {
     sourcePrint("}}}")
     
     sourcePrint("public override func prepareForInterfaceBuilder() {")
-    sourcePrint("if StyleKitCanvas(rawValue: self.canvasName) == nil {\nself.backgroundColor = UIColor.grayColor\n }")
+    sourcePrint("if StyleKitCanvas(rawValue: self.canvasName) == nil {\nself.backgroundColor = UIColor.grayColor()\n }")
     sourcePrint("}}")
     
     return sourceCode
