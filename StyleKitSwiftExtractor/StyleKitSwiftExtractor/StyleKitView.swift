@@ -8,16 +8,16 @@
 
 import Foundation
 
-/** Extracts the canvas names from StyleKit source code (that conform to 'class func drawCanvasName(#frame: CGRect, tintColor: UIColor)' pattern. */
+/** Extracts the canvas names from StyleKit source code (that conform to 'class func drawCanvasName(frame frame: CGRect, tintColor: UIColor)' pattern. */
 public func ExtractCanvasNames(inputText: String) -> [String] {
     
-    let pattern = "class func draw(\\w+)\\(#frame: CGRect, tintColor: UIColor\\)"
+    let pattern = "class func draw(\\w+)\\(frame frame: CGRect"
     
-    let regularExpression = NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions.allZeros, error: nil)!
+    let regularExpression = try! NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions())
     
     let inputTextRange = NSRange(location: 0, length: (inputText as NSString).length)
     
-    let matches = regularExpression.matchesInString(inputText, options: NSMatchingOptions.allZeros, range: inputTextRange) as! [NSTextCheckingResult]
+    let matches = regularExpression.matchesInString(inputText, options: NSMatchingOptions(), range: inputTextRange) 
     
     var names = [String]()
     
